@@ -109,7 +109,6 @@
 		949876021E84F2BB00E9800F /* YMSeeAllController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 949875FC1E84F2BB00E9800F /* YMSeeAllController.swift */; };
 		949876031E84F2BB00E9800F /* YMSeeAllController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 949875FD1E84F2BB00E9800F /* YMSeeAllController.xib */; };
 		949876051E84F2DB00E9800F /* YMCategoryHeaderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 949876041E84F2DB00E9800F /* YMCategoryHeaderViewController.swift */; };
-		B047E71690AFE0C408DD18D7 /* Pods_DanTang.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17D5428C704355532C8677DA /* Pods_DanTang.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -147,6 +146,7 @@
 		7A35EAD51ED7A659005649E4 /* MainControl.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainControl.xib; sourceTree = "<group>"; };
 		7A35EAD91ED7B482005649E4 /* MyController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MyController.xib; sourceTree = "<group>"; };
 		7A35EADA1ED7B482005649E4 /* MyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyViewController.swift; sourceTree = "<group>"; };
+		7A640C331ED7D973000B4E7A /* SMSSDK-Bridge-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SMSSDK-Bridge-Header.h"; sourceTree = "<group>"; };
 		7AB95CBE1ED741500093D72F /* YMLogin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YMLogin.swift; sourceTree = "<group>"; };
 		8BA52A1C232779A41AA62764 /* Pods-SWC.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SWC.release.xcconfig"; path = "Pods/Target Support Files/Pods-SWC/Pods-SWC.release.xcconfig"; sourceTree = "<group>"; };
 		9498750F1E84A83400E9800F /* SWC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SWC.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -257,7 +257,6 @@
 				7A0010AB1ED7CE1300D2604D /* MessageUI.framework in Frameworks */,
 				7A0010A91ED7CE0B00D2604D /* libicucore.tbd in Frameworks */,
 				7A0010A71ED7CDFF00D2604D /* libz.tbd in Frameworks */,
-				B047E71690AFE0C408DD18D7 /* Pods_DanTang.framework in Frameworks */,
 				5F738E8ED3FD4B2821605F94 /* Pods_SWC.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -312,6 +311,7 @@
 		949875061E84A83400E9800F = {
 			isa = PBXGroup;
 			children = (
+				7A640C331ED7D973000B4E7A /* SMSSDK-Bridge-Header.h */,
 				949875111E84A83400E9800F /* DanTang */,
 				949875261E84A83400E9800F /* DanTangTests */,
 				949875311E84A83400E9800F /* DanTangUITests */,
@@ -1074,6 +1074,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.swc.kongtiao;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "SMSSDK-Bridge-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -1094,6 +1095,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.swc.kongtiao;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "SMSSDK-Bridge-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
